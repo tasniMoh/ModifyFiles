@@ -17,7 +17,15 @@ namespace ModifyFiles
             mainMenu(directory);
 
             Console.ReadKey();
-            
+            /*
+                        var builder = new StringBuilder("You can do these actions :");
+
+                        builder.AppendLine();
+                        builder.Append("1.Remove a File");
+                        builder.AppendLine("2.Rename a File");
+                        builder.AppendLine("3.Create a File");
+                        builder.AppendLine("4.");*/
+
         }
 
         public static void mainMenu(string directory)
@@ -34,7 +42,7 @@ namespace ModifyFiles
             {
                 Console.WriteLine("invalid input,please enter a valid input.");
                 kindOfChange = Console.ReadLine();
-                i = int.Parse(kindOfChange);
+                 i = int.Parse(kindOfChange);
             }
             if (i == 1)
             {
@@ -44,7 +52,7 @@ namespace ModifyFiles
             {
                 directoryMenu(directory);
             }
-
+            
         }
         public static void fileMenu(string directory)
         {
@@ -108,7 +116,7 @@ namespace ModifyFiles
             else if (i == 2)
             {
                 deleteDirectory(directory);
-            }
+        }
             else if (i == 3)
             {
                 moveDirectory(directory);
