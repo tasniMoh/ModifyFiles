@@ -17,16 +17,9 @@ namespace ModifyFiles
             mainMenu(directory);
 
             Console.ReadKey();
-            /*
-                        var builder = new StringBuilder("You can do these actions :");
-
-                        builder.AppendLine();
-                        builder.Append("1.Remove a File");
-                        builder.AppendLine("2.Rename a File");
-                        builder.AppendLine("3.Create a File");
-                        builder.AppendLine("4.");*/
-
+            
         }
+
         public static void mainMenu(string directory)
         {
 
